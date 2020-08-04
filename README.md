@@ -4,6 +4,8 @@
 
 ## Abstract (tl;dr)
 
+The purpose of this research is to analyze the effects of COVID-19, specifically in Urban regions across the country. Because of the high transmission rates of the virus, it would be intruiging to study the effects a highly transmissive virus had in congested areas. This research was conducted using online resources from trusted websites. The conclusion of my analysis will definitivley show the effects COVID-19 had in urban regions compared to the average rate of tranmission. 
+
 ## Introduction
 
 ## Hypothesis
