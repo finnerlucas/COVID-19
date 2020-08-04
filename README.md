@@ -13,11 +13,13 @@ This research will dive into the transmittion rates of Coronavirus in urban area
 
 ## Hypothesis
 
-1. Urban regions are more suseptible to high spikes in cases
+**Urban regions are more suseptible to higher transmission rates than the mean**
 
 ## Datasets used
 
+
 [Harvard dataverse US Metropolitan Daily cases] (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5B8YM8)
+
 
 [Harvard dataverse cases by poverty, gender, race] (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SAHDY3)
 
