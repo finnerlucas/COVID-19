@@ -8,11 +8,12 @@ The purpose of this research is to analyze the effects of COVID-19, specifically
 
 ## Introduction
 
+COVID-19 is a viral disease that has caused a global pandemic in 2020. Along with being a deadly disease to at risk people, the world has seemed to struggle to contain the virus. This mainly has to do with how contagious it actually is. Cities around the world have had great difficulties containing this virus. The big question remains "How do you contain a virus in densely populated areas?".
+This research will dive into the transmittion rates of Coronavirus in urban areas, and compare it to the average. Using research and analysis there will be a definitive answer for the effects Coronavirus has in urban areas vs the mean.
+
 ## Hypothesis
 
 1. Urban regions are more suseptible to high spikes in cases
-2. Lower incomce people are more likley to contract coronavirus
-3. Rural countires have handled coronavirus spikes better than Urban countries
 
 ## Datasets used
 
