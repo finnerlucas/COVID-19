@@ -11,23 +11,36 @@ library(tidyverse)
 library(kableExtra)
 library(HelpersMG)
 library(readr)
+library(knitr)
 ```
 
 
 ```{r Load_data_set_1}
 average <- read_csv("raw_data/WHO-COVID-19-global-data.csv")
 average <- filter(average, Country == "United States of America")
-a <- ggplot(average,aes(x=Date_reported,y=Cumulative_cases, group_by(Country))) + geom_line() +theme(legend.position = "bottom") + labs(title = "Cumulative cases in the United States")
+a <- ggplot(average,aes(x=Date_reported,y=Cumulative_cases, group_by(Country))) + geom_line(show.legend = TRUE) +theme(legend.position = "bottom") + labs(title = "Cumulative cases in the United States") + geom_smooth(method = "lm", se=FALSE, color="blue", formula = y ~ x) 
 
 print(a)
+
+ggsave("United States Cumulative Cases", plot = a,device = "jpeg", path = "output")
 ```
 
 ```{r Load_data_set_2}
 CityAverage <- read_tsv("raw_data/us_metro_confirmed_cases_cdl.tsv")
-CityAverage <- filter(CityAverage, Metropolitan == "Chicago-Joliet-Naperville IL-IN-WI")
+CityAverage <- filter(CityAverage, Metropolitan == "New York-Northern NJ-Long Is NY-NJ-PA")
 CityAverage <- pivot_longer(CityAverage, -Metropolitan, names_to = "Date", values_to = "Cumulative Cases")
-CityAverage <- CityAverage[20:200,]
-b <- ggplot(CityAverage,aes(x=Date,y="Cumulative Cases"")) + geom_abline() +theme(legend.position = "bottom") + labs(title = "Cumulative cases in the United States")
-print(b)
+CityAverage <- CityAverage[185:200,]
+
+print(CityAverage)
+
+write.table(CityAverage, file = "output/New York Cumulative Cases")
 ```
 
+```{r Load_data_set_3}
+CityAverage <- read_tsv("raw_data/us_metro_confirmed_cases_cdl.tsv")
+CityAverage <- filter(CityAverage, Metropolitan == "Chicago-Joliet-Naperville IL-IN-WI")
+CityAverage <- pivot_longer(CityAverage, -Metropolitan, names_to = "Date", values_to = "Cumulative Cases")
+CityAverage <- CityAverage[185:200,]
+
+print(CityAverage)
+```
