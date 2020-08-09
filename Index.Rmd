@@ -18,7 +18,7 @@ library(knitr)
 ```{r Load_data_set_1}
 average <- read_csv("raw_data/WHO-COVID-19-global-data.csv")
 average <- filter(average, Country == "United States of America")
-a <- ggplot(average,aes(x=Date_reported,y=Cumulative_cases, group_by(Country))) + geom_line(show.legend = TRUE) +theme(legend.position = "bottom") + labs(title = "Cumulative cases in the United States") + geom_smooth(method = "lm", se=FALSE, color="blue", formula = y ~ x) 
+a <- ggplot(average,aes(x=Date_reported,y=Cumulative_cases, group_by(Country))) + geom_line(show.legend = TRUE) +theme(legend.position = "bottom") + labs(title = "Cumulative cases in the United States") + geom_smooth(method = "lm", se=FALSE, color="blue", formula = y ~ x)
 
 print(a)
 
