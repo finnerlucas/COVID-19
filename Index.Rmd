@@ -43,4 +43,5 @@ CityAverage <- pivot_longer(CityAverage, -Metropolitan, names_to = "Date", value
 CityAverage <- CityAverage[185:200,]
 
 print(CityAverage)
+write.table(CityAverage, file = "output/Chicago Cumulative Cases")
 ```
