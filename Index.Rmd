@@ -2,7 +2,7 @@
 title: "Index"
 author: "Lucas Finner"
 date: "7/14/2020"
-output: html_document
+output: index
 ---
 
 ```{r setup, include=FALSE}
@@ -13,7 +13,7 @@ library(HelpersMG)
 library(readr)
 library(knitr)
 ```
-
+This is the library needed for R markdown. All of the resources used come from this library.
 
 ```{r Load_data_set_1}
 average <- read_csv("raw_data/WHO-COVID-19-global-data.csv")
@@ -24,6 +24,8 @@ print(a)
 
 ggsave("United States Cumulative Cases", plot = a,device = "jpeg", path = "output")
 ```
+This chunk takes raw data from OurWorldInData and imports it to crate a graph. the data imported is for all countries, but for our purposes we are filtering just for the United States. A ggpot is then created with the x-axis, y-axis, graph line, corresponding linear line, and labels. This will be sufficient to include in our report later on. The graph is then saved into our "output" folder that will make it easier to utilize in other documents.
+
 
 ```{r Load_data_set_2}
 CityAverage <- read_tsv("raw_data/us_metro_confirmed_cases_cdl.tsv")
@@ -45,3 +47,4 @@ CityAverage <- CityAverage[185:200,]
 print(CityAverage)
 write.table(CityAverage, file = "output/Chicago Cumulative Cases")
 ```
+Load_data_set_2 and Load_data_set_3 both function in similar ways. Data for both is imported from the Harvard Dataverse. From there, each chunk is filtered to the specific urban Area we are trying to retrieve data from (Chicago and New York). The data is then pivoted to inverse the rows and columns. This is done to better interpret the data by date rather than by city. From there a sample of the data is taken to visualize. This is done to highlight the most important dates and to not show an overwhelming number of rows in the table. In this instance July was used because of its recency. The last item perfromed in these chunks is the table is written into a file in the output folder. From there it can be used for other purposes. 
