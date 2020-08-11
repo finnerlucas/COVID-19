@@ -32,10 +32,12 @@ The dataset used for this project came from the sources below:
 
 To analyze this data, A graph and two tables were created to interpret the data. [Graph 1](https://github.com/finnerlucas/COVID-19/blob/master/output/United%20States%20Cumulative%20Cases) shows the graph of cumulative cases of COVID-19 within the United States. A slope line was created to show the average rate of transmission, which came out to be around new 31,000 cases a day. When factoring in the population of the United States (328,200,000), the rate of infection per person is .00945%
 
-
+![Image](output\sup.jpeg)
+**(Graph 1)**
 
 The two tables created show the cumulative cases for both [New York](https://github.com/finnerlucas/COVID-19/blob/master/output/New%20York%20Cumulative%20Cases) and [Chicago](https| "7/26/20" |505908|
 |New York-Northern NJ-Long Is NY-NJ-PA://github.com/finnerlucas/COVID-19/blob/master/output/Chicago%20Cumulative%20Cases).
+![Image](output\sup.jpeg)
 
 The tables shown indicate the average rate of infection increase is 890 for Chicago and 657 for New York. When the populations for these areas is factored in (9,533,000) and New York (20,000,000), the rate of infection per person is .00934% and .00329%, respectively. 
 
@@ -56,6 +58,28 @@ The tables shown indicate the average rate of infection increase is 890 for Chic
 |New York-Northern NJ-Long Is NY-NJ-PA| 7/25/20 |505226|
 |New York-Northern NJ-Long Is NY-NJ-PA| 7/27/20 |506636|
 |New York-Northern NJ-Long Is NY-NJ-PA| 7/28/20 |507300|
+**(Table 1)**
+
+|Metropolitan | Date | Cumulative Cases |
+|-------------|------|------------------|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/13/20 |144304|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/14/20 |144893|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/15/20 |145822|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/16/20 |146804|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/17/20 |147778|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/18/20 |148743|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/19/20 |149496|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/20/20 |150318|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/21/20 |151174|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/22/20 |152425|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/23/20 |153639|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/24/20 |154744|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/25/20 |155767|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/26/20 |156903|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/27/20 |157746|
+|Chicago-Joliet-Naperville IL-IN-WI| 7/28/20 |158549|
+**(Table 2)**
+
 
 
 This shows the rate of infection was actually similar across the urban cities and the coutnry as a whole. 
