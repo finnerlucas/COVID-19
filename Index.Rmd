@@ -22,7 +22,7 @@ a <- ggplot(average,aes(x=Date_reported,y=Cumulative_cases, group_by(Country))) 
 
 print(a)
 
-ggsave("United States Cumulative Cases", plot = a,device = "jpeg", path = "output")
+ggsave("sup", plot = a,device = "jpeg", path = "output")
 ```
 This chunk takes raw data from OurWorldInData and imports it to crate a graph. the data imported is for all countries, but for our purposes we are filtering just for the United States. A ggpot is then created with the x-axis, y-axis, graph line, corresponding linear line, and labels. This will be sufficient to include in our report later on. The graph is then saved into our "output" folder that will make it easier to utilize in other documents.
 

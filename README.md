@@ -37,7 +37,6 @@ To analyze this data, A graph and two tables were created to interpret the data.
 
 The two tables created show the cumulative cases for both [New York](https://github.com/finnerlucas/COVID-19/blob/master/output/New%20York%20Cumulative%20Cases) and [Chicago](https| "7/26/20" |505908|
 |New York-Northern NJ-Long Is NY-NJ-PA://github.com/finnerlucas/COVID-19/blob/master/output/Chicago%20Cumulative%20Cases).
-![Image](output\sup.jpeg)
 
 The tables shown indicate the average rate of infection increase is 890 for Chicago and 657 for New York. When the populations for these areas is factored in (9,533,000) and New York (20,000,000), the rate of infection per person is .00934% and .00329%, respectively. 
 
